@@ -20,8 +20,8 @@ const Header = () => {
             <Nav>
                 <Dropdown align='end'>
                     <Dropdown.Toggle variant="success" className='d-flex align-items-center gap-3'>
-                        <BiShoppingBag color='white' size={33} />
-                        <span className='bg-success fs-4'>0</span>
+                        <BiShoppingBag color='white' size={26} />
+                        <span className='bg-transparent fs-5'>0</span>
                     </Dropdown.Toggle>
 
                     <Dropdown.Menu style={{minWidth: 370}}>
