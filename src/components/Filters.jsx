@@ -51,19 +51,6 @@ const Filters = () => {
             />
         </span>
         <span>
-            <Form.Check
-                inline
-                label="Fast Delivery Only"
-                name="group1"
-                type="checkbox"
-                id={`inline-4`}
-                onChange={() => productDispatch({
-                    type: "FILTER_BY_DELIVERY",
-                })}
-                checked={byFastDelivery}
-            />
-        </span>
-        <span>
             <label style={{paddingRight: 10}}>Rating: </label>
             <Rating 
                 rating={byRating} 
@@ -73,7 +60,7 @@ const Filters = () => {
         </span>
         <Button 
             variant="light"
-            onChange={() => productDispatch({
+            onClick={() => productDispatch({
                 type: "CLEAR_FILTERS",
             })}
         >Clear Filters</Button>

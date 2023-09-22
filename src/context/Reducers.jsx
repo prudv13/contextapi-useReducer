@@ -32,11 +32,6 @@ export const productReducer = (state, action) => {
                 ...state,
                 byStock: !state.byStock
             }
-        case 'FILTER_BY_DELIVERY':
-            return {
-                ...state,
-                byFastDelivery: !state.byFastDelivery
-            }
         case 'FILTER_BY_RATING':
             return {
                 ...state,
@@ -50,7 +45,6 @@ export const productReducer = (state, action) => {
         case 'CLEAR_FILTERS':
             return {
                 byStock: false,
-                byFastDelivery: false,
                 byRating: 0,
                 searchQuery: "",
             };
