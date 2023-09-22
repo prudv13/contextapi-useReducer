@@ -4,7 +4,7 @@ import Rating from './Rating';
 
 const Filters = () => {
 
-    const [rate, setRate] = useState(3);
+    const [rate, setRate] = useState(0);
   return (
     <div className='filters'>
         <span className='title'>Filter Products</span>

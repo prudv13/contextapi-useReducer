@@ -35,3 +35,12 @@ a {
 .filters > span {
     padding-bottom: 20px;
 }
+
+.title {
+    font-size: 30px;
+}
+
+.products {
+    width: 30%;
+    margin: 10px;
+}
