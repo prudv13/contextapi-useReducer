@@ -6,7 +6,7 @@ import { CartState } from '../context/Context';
 import { AiFillDelete } from 'react-icons/ai';
 
 const Header = () => {
-    const {state: {cart}, dispatch} = CartState();
+    const {state: {cart}, dispatch, productDispatch} = CartState();
   return (
     <Navbar bg="dark" variant='dark' style={{height:80}}>
         <Container>
@@ -18,6 +18,12 @@ const Header = () => {
                     placeholder='search product...'
                     style={{width:500}}
                     className='m-auto'
+                    onChange={(e) => {
+                        productDispatch({
+                            type: "FILTER_BY_SEARCH",
+                            payload: e.target.value,
+                        });
+                    }}
                 />
             </Navbar.Text>
             <Nav>
