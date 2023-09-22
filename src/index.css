@@ -66,3 +66,7 @@ a {
     padding: 0 20px;
     flex-direction: column;
 }
+
+.summary {
+    width: 30%;
+}

@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { Container, Dropdown, FormControl, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Dropdown, FormControl, Nav, Navbar } from 'react-bootstrap';
 import {BiShoppingBag} from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import { CartState } from '../context/Context';
@@ -55,6 +55,11 @@ const Header = () => {
                                         </span>
                                     ))
                                 }
+                                <Link to='/cart'>
+                                    <Button style={{width: "95%", margin: "0 10px"}}>
+                                        Go To Cart
+                                    </Button>
+                                </Link>
                             </Fragment>
                         ) :
                         (<span style={{padding: 10}}>Cart is Empty!</span>)
